@@ -14,7 +14,7 @@ I started to learn web development last year with TeachMeSkills LLC. It was an i
 - Location: Gomel, Belarus
 - Linkedin: [kristina-klepik-572617237](https://www.linkedin.com/in/kristina-klepik-572617237)
 - Gmail: kristina.klepik.by@gmail.com
-- Git-Hub: github.com/Kristy-user
+- Git-Hub: [github.com/Kristy-user](https://www.github.com/Kristy-user)
 
 ## _Skills:_
 
