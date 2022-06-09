@@ -1,0 +1,138 @@
+.section-profile {
+  position: relative;
+  color: rgba(14, 15, 18, 0.601);
+}
+.profile__parallax {
+  background-color: rgb(233, 236, 243);
+  background-image: url(../assets/background.jpg);
+  width: 100%;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile__photo {
+  position: absolute;
+  top: 14%;
+  left: 18%;
+  max-height: 220px;
+  max-width: 220px;
+  border-radius: 50%;
+  border: 6px solid rgba(47, 34, 50, 0.44);
+  margin: 20px;
+}
+
+.profile__title {
+  position: absolute;
+  font-size: 42px;
+  top: 24%;
+  left: 50%;
+  font-weight: normal;
+}
+.profile__cv {
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  border-radius: 6px;
+  background-color: rgba(176, 84, 165, 0.2);
+  padding: 20px;
+}
+
+.profile__subtitle {
+  position: absolute;
+  font-size: 18px;
+  top: 35%;
+  left: 58%;
+  text-transform: uppercase;
+}
+.cv__title {
+  padding-left: 25px;
+}
+.cv__link {
+  position: relative;
+}
+.cv__title:hover:before {
+  filter: invert(0%);
+}
+.cv__title:before {
+  left: 0;
+  background: url(../assets/icons/download-svgrepo-com.svg);
+}
+
+@media (max-width: 870px) {
+  .profile__photo {
+    top: 20%;
+    left: 13%;
+  }
+  .profile__title {
+    top: 28%;
+    left: 50%;
+    font-size: 30px;
+    padding: 0;
+  }
+  .profile__subtitle {
+    font-size: 16px;
+    top: 35%;
+    left: 55%;
+  }
+
+  .profile__cv {
+    top: 45%;
+    left: 57%;
+  }
+}
+@media (max-width: 629px) {
+  .profile__parallax {
+    background-size: 200%;
+  }
+  .profile__photo {
+    top: 25%;
+    left: 5%;
+  }
+  .profile__title {
+    top: 30%;
+    left: 44%;
+    font-size: 28px;
+  }
+  .profile__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    top: 39%;
+    left: 52%;
+  }
+  .profile__cv {
+    top: 50%;
+    left: 55%;
+  }
+}
+@media (max-width: 550px) {
+  .profile__photo {
+    top: 10%;
+    left: 20%;
+  }
+  .profile__title {
+    top: 60%;
+    left: 14%;
+    font-size: 28px;
+  }
+  .profile__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    top: 68%;
+    left: 25%;
+  }
+  .section-profile {
+    color: rgba(51, 38, 56, 0.896);
+  }
+  .profile__cv {
+    top: 75%;
+    left: 30%;
+    padding: 8px;
+    color: rgb(64, 47, 61);
+    background-color: rgba(189, 115, 153, 0.544);
+  }
+  .profile__parallax {
+    background-size: 300%;
+  }
+}

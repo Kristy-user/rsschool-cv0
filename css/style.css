@@ -1,0 +1,148 @@
+@import url('header.css');
+@import url('profile.css');
+@import url('about.css');
+@import url('skills.css');
+@import url('projects.css');
+@import url('courses.css');
+@import url('education.css');
+@import url('code.css');
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  background-color: transparent;
+  color: inherit;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+input {
+  line-height: normal;
+}
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.title {
+  border-radius: 6px;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ffffff;
+  width: fit-content;
+  background-color: #9d409c6c;
+  padding: 10px;
+  margin: 30px auto;
+}
+
+.footer {
+  background-color: #d2a6fe4f;
+  padding: 15px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  font-size: 16px;
+  color: rgb(86, 72, 99);
+}
+
+.rss {
+  position: relative;
+}
+.rss:before {
+  position: absolute;
+  content: '';
+  top: -20px;
+  right: 20px;
+  background-image: url(../assets/icons/rs_school_js.svg);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 40px;
+  filter: drop-shadow(0px 0px 10px rgb(82, 14, 138)) opacity(0.7);
+}
+.github {
+  padding: 6px;
+  cursor: pointer;
+
+  position: relative;
+}
+.github:hover {
+  border-radius: 6px;
+  text-shadow: 0 0 10px rgb(104, 6, 137);
+}
+.github:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  right: 100px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-image: url(../assets/icons/Skills/github.png);
+}
+.github:hover:before {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .github:before {
+    background-size: 30px 30px;
+    top: 0;
+    right: 90px;
+  }
+  .rss:before {
+    right: -35px;
+    top: -15px;
+    width: 80px;
+    height: 25px;
+  }
+}

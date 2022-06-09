@@ -1,0 +1,16 @@
+.code-example__text {
+  font-family: monospace;
+  font-size: 18px;
+  white-space: pre;
+  align-self: center;
+  background-color: #decbe862;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 10px;
+}
+.pre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* margin: 0 20px 60px 0; */
+}
