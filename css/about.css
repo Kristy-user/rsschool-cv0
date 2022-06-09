@@ -1,0 +1,96 @@
+.about__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.about-info,
+.about-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.about-text {
+  font-size: 18px;
+  padding: 10px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.about-contacts {
+  padding-left: 20px;
+  text-align: right;
+}
+.contacts-item {
+  position: relative;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.contacts-link {
+  padding-right: 30px;
+  align-self: center;
+}
+.contacts-link:hover {
+  color: #630a61bb;
+}
+.about-text {
+  border-radius: 6px;
+  background: #decbe862;
+}
+
+.contacts-link:before,
+.cv__title:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: invert(49%) sepia(7%) saturate(1423%) hue-rotate(215deg)
+    brightness(88%) contrast(84%);
+  font-weight: bold;
+  height: 20px;
+  width: 20px;
+}
+.contacts-link:hover:before {
+  filter: invert(79%) sepia(47%) saturate(1423%) hue-rotate(215deg)
+    brightness(88%) contrast(84%);
+}
+.contacts__title.title {
+  margin-right: 0;
+}
+.linkedin:before {
+  background: url(../assets/icons/linkedin-svgrepo-com.svg);
+}
+.phone:before {
+  background: url(../assets/icons/viber-svgrepo-com.svg);
+}
+.mail:before {
+  background: url(../assets/icons/gmail-svgrepo-com.svg);
+}
+.map:before {
+  background: url(../assets/icons/map-svgrepo-com.svg);
+}
+.github-svg:before {
+  background: url(../assets/icons/github.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 726px) {
+  .about-info,
+  .about-contacts {
+    width: 90%;
+    align-items: center;
+  }
+  .contacts__title.title {
+    margin: 10px auto;
+  }
+  .about-contacts {
+    margin-top: 30px;
+    align-items: center;
+    text-align: left;
+    padding-left: 0;
+  }
+}
