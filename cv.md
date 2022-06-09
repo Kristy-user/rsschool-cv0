@@ -2,7 +2,7 @@
 
 Junior Frontend Developer
 
-## ![My_photo](./img/kris.png 'My photo')
+## ![My_photo](assets/photo_2.jpg 'My photo')
 
 ## _About_
 
@@ -12,14 +12,14 @@ I started to learn web development last year with TeachMeSkills LLC. It was an i
 ## _Contacts:_
 
 - Location: Gomel, Belarus
-- Linkedin: [kristina-klepik-572617237](https://www.linkedin.com/in/kristina-klepik-572617237)
+- Linkedin: [kristina-klepik](https://www.linkedin.com/in/kristina-klepik)
 - Gmail: kristina.klepik.by@gmail.com
 - Git-Hub: [github.com/Kristy-user](https://www.github.com/Kristy-user)
 
 ## _Skills:_
 
 - HTML, CSS / SCSS
-- JavaScript, TypeScript, ReactJS | Redux
+- JavaScript, TypeScript, ReactJS, Redux
 - Ajax, API, REST
 - OOP
 - Git, GitHub
@@ -44,13 +44,12 @@ return str.split(/_|-/)
 
 ### _Certificates:_
 
-> - [Front-End Developer [TeachMeSkills LLC]](./img/certificate.jpg)
+> - [Front-End Developer [TeachMeSkills LLC]](assets/Certificates/certificate.jpg)
 > - [Learn TypeScript Course [Codecademy]](https://www.codecademy.com/profiles/beta4251284206/certificates/56fb1e71303e37b643bb1905f31c8a09)
 > - [Create a Front-End App with React Skill Path [Codecademy]](https://www.codecademy.com/profiles/beta4251284206/certificates/5c9ce0b45f1de879ebcad4fd)
 > - [Learn JavaScript Course [Codecademy]](https://www.codecademy.com/profiles/beta4251284206/certificates/705dcb15de0da4dd9d9fc4f3274b430e)
-> - [Learn JavaScript Course [Codecademy]](./img/certificate.png)
 
 ### _Languages:_
 
 - Russian - Native;
-- English - B1 | [EF SET English Certificate 58/100 (B2 Upper Intermediate)](https://efset.org/cert/5c1kgb)
+- English - B1 [EF SET English Certificate 58/100 (B2 Upper Intermediate)](https://efset.org/cert/5c1kgb)
