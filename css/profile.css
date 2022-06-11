@@ -1,0 +1,190 @@
+.section-profile {
+  color: rgba(14, 15, 18, 0.601);
+}
+.profile__container {
+  position: relative;
+}
+.profile__parallax {
+  background-color: rgb(233, 236, 243);
+  background-image: url(../assets/background.jpg);
+  width: 100%;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile__photo {
+  position: absolute;
+  top: -450px;
+  left: 8%;
+  max-height: 220px;
+  max-width: 220px;
+  border-radius: 50%;
+  border: 6px solid rgba(174, 138, 182, 0.44);
+  filter: brightness(120%);
+  margin: 20px;
+}
+
+.profile__title {
+  position: absolute;
+  font-size: 42px;
+  top: -400px;
+  left: 45%;
+  font-weight: normal;
+}
+.profile__cv {
+  position: absolute;
+  top: -280px;
+  left: 55%;
+  border-radius: 6px;
+  background-color: rgba(176, 84, 165, 0.2);
+  padding: 20px;
+}
+
+.profile__subtitle {
+  position: absolute;
+  font-size: 18px;
+  top: -340px;
+  left: 53%;
+  text-transform: uppercase;
+}
+.cv__title {
+  padding-left: 25px;
+}
+.cv__link {
+  position: relative;
+}
+.cv__title:hover:before {
+  filter: invert(0%);
+}
+.cv__title:before {
+  left: 0;
+  background: url(../assets/icons/download-svgrepo-com.svg);
+}
+@media (max-width: 927px) {
+  .profile__photo {
+    top: -380px;
+    left: 8%;
+  }
+  .profile__title {
+    top: -340px;
+    left: 45%;
+  }
+  .profile__subtitle {
+    top: -280px;
+    left: 53%;
+  }
+  .profile__cv {
+    top: -230px;
+    left: 55%;
+  }
+}
+@media (max-width: 775px) {
+  .profile__photo {
+    top: -380px;
+    left: 8%;
+  }
+
+  .profile__title {
+    top: -340px;
+    left: 50%;
+    font-size: 30px;
+    padding: 0;
+  }
+  .profile__subtitle {
+    font-size: 16px;
+    top: -280px;
+    left: 55%;
+  }
+
+  .profile__cv {
+    top: -230px;
+    left: 57%;
+  }
+}
+@media (max-width: 726px) {
+  .profile__container {
+    position: static;
+  }
+  .profile__parallax {
+    background-size: 200%;
+    position: relative;
+  }
+  .profile__photo {
+    top: 18%;
+    left: 10%;
+  }
+  .profile__title {
+    top: 25%;
+    left: 50%;
+    font-size: 28px;
+  }
+  .profile__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    top: 33%;
+    left: 53%;
+  }
+  .profile__cv {
+    top: 45%;
+    left: 55%;
+  }
+}
+@media (max-width: 600px) {
+  .profile__parallax {
+    background-size: 400%;
+  }
+  .profile__photo {
+    top: 10%;
+    left: 28%;
+  }
+  .profile__title {
+    top: 50%;
+    left: 28%;
+    font-size: 28px;
+  }
+  .profile__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    top: 58%;
+    left: 33%;
+  }
+  .section-profile {
+    color: rgb(110, 90, 118);
+  }
+  .profile__cv {
+    top: 65%;
+    left: 37%;
+    padding: 8px;
+    color: rgb(42, 33, 40);
+    background-color: rgba(233, 189, 211, 0.904);
+  }
+}
+@media (max-width: 480px) {
+  .profile__photo {
+    top: 10%;
+    left: 18%;
+  }
+  .profile__title {
+    top: 48%;
+    left: 14%;
+    font-size: 28px;
+  }
+  .profile__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    top: 54%;
+    left: 20%;
+  }
+  .section-profile {
+    color: rgb(110, 90, 118);
+  }
+  .profile__cv {
+    top: 60%;
+    left: 27%;
+    padding: 8px;
+    color: rgb(42, 33, 40);
+    background-color: rgba(233, 189, 211, 0.904);
+  }
+}
