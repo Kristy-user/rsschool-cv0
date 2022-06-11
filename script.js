@@ -18,7 +18,7 @@ if (iconBurger.classList.contains('active')) {
 }
 
 menuBody.addEventListener('click', function (e) {
-  if (e.target === iconBurger || e.target.classList.contains('nav-link')) {
+  if (e.target === iconBurger || e.target.classList.contains('nav__link')) {
     removeBurger();
   }
 });

@@ -3,22 +3,20 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 40px;
+  padding: 20px;
 }
 
 .languages__text,
 .education__text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  padding: 30px;
+  justify-content: center;
+  padding: 25px;
   text-align: center;
-  min-height: 150px;
-  max-width: 100%;
+  max-height: 180px;
+  max-width: 90%;
   line-height: 1.5;
-  margin: auto 0;
+  margin: 0 auto;
   font-size: 18px;
   color: rgb(64, 59, 67);
   border: 1px solid violet;
@@ -59,11 +57,42 @@
 .education__text:hover {
   background: #decbe862;
 }
-
+.education__text p:last-child {
+  padding-top: 5px;
+  text-transform: uppercase;
+}
 .education__text:hover:before,
 .languages__text:hover:before {
-  background-color: rgb(99, 10, 111);
+  background-color: rgb(200, 53, 220);
+}
+.languages__link {
+  cursor: pointer;
+  color: rgb(146, 34, 77);
 }
 .languages__link:hover {
   color: rgb(233, 61, 215);
+}
+.languages__link {
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 420px) {
+  .education__text:before,
+  .languages__text:before {
+    height: 30px;
+    width: 30px;
+    top: -20px;
+  }
+  .education__title,
+  .education__text,
+  .languages__text {
+    font-size: 16px;
+  }
 }

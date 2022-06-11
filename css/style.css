@@ -6,14 +6,26 @@
 @import url('courses.css');
 @import url('education.css');
 @import url('code.css');
+
+@font-face {
+  font-family: 'PT Serif', serif;
+  src: url('../assets/fonts/PTSerif-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'PT Serif', serif;
+  src: url('../assets/fonts/PTSerif-Bold.ttf');
+  font-weight: 700;
+}
 * {
   padding: 0;
   margin: 0;
   list-style-type: none;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Serif', serif;
 }
+
 ul,
 ol {
   list-style: none;
@@ -52,7 +64,7 @@ input {
 }
 html {
   scroll-behavior: smooth;
-  overflow: scroll;
+  overflow-x: hidden;
 }
 
 body {
@@ -66,12 +78,18 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   padding: 10px;
+  border-right: 1px solid rgba(94, 21, 89, 0.1);
+  border-left: 1px solid rgba(94, 21, 89, 0.1);
 }
+/* .container:nth-child(0),
+.container:last-child {
+  border: none;
+} */
 
 .title {
   border-radius: 6px;
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 36px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #ffffff;
@@ -82,19 +100,26 @@ body {
 }
 
 .footer {
-  background-color: #d2a6fe4f;
+  background-color: rgba(234, 225, 243, 0.882);
   padding: 15px 0;
 }
-
+.button-hover:hover {
+  cursor: pointer;
+  border-radius: 6px;
+  color: rgb(8, 2, 2);
+  background-image: linear-gradient(120deg, #a6c0fe4f 20%, #f680843e 80%);
+}
 .footer__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   align-content: center;
   font-size: 16px;
-  color: rgb(86, 72, 99);
 }
-
+.header__container,
+.footer__container {
+  border: none;
+}
 .rss {
   position: relative;
 }
@@ -132,6 +157,11 @@ body {
 }
 .github:hover:before {
   transform: scale(1.2);
+}
+@media (max-width: 1170px) {
+  .profile__container {
+    border: none;
+  }
 }
 @media (max-width: 768px) {
   .github:before {

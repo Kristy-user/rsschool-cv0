@@ -24,8 +24,8 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 2px solid #336ba35a;
-  box-shadow: inset 1px 3px 2px 3px rgba(73, 131, 142, 0.318);
+  border: 1px solid #73a9df2c;
+  box-shadow: inset 1px 3px 2px 3px rgba(124, 208, 223, 0.215);
   animation: round 4s linear infinite;
 }
 

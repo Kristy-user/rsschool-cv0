@@ -1,10 +1,10 @@
 .code-example__text {
   font-family: monospace;
-  font-size: 18px;
+  font-size: 16px;
   white-space: pre;
   align-self: center;
   background-color: #decbe862;
-  padding: 15px;
+  padding: 20px;
   border-radius: 6px;
   margin: 10px;
 }
@@ -12,5 +12,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* margin: 0 20px 60px 0; */
+}
+
+@media (max-width: 450px) {
+  .code-example__text {
+    font-size: 14px;
+  }
 }
