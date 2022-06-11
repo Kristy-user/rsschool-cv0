@@ -1,0 +1,21 @@
+.code-example__text {
+  font-family: monospace;
+  font-size: 16px;
+  white-space: pre;
+  align-self: center;
+  background-color: #decbe862;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 10px;
+}
+.pre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 450px) {
+  .code-example__text {
+    font-size: 14px;
+  }
+}
